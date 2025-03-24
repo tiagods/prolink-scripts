@@ -143,7 +143,7 @@ def processar_extrato():
                 errorReport.append(erro)
             else:
                 ext["cliente"] = df_result['Cliente'].values[0]
-                extrato_conciliado.loc[len(extrato_conciliado)] = [ext["data"], "10008", "31577", ext["valor"], "132", ext["nfs"] + ext["cliente"], "", 2194, "",""]
+                extrato_conciliado.loc[len(extrato_conciliado)] = [ext["data"], "10008", "31577", ext["valor"], "132", ext["nfs"] + " " + ext["cliente"], "", 2194, "",""]
 
         output = BytesIO()
         with pd.ExcelWriter(output, engine="xlsxwriter") as writer:
