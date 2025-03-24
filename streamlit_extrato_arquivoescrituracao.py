@@ -184,26 +184,31 @@ def main():
 
         st.markdown(
             """
-            Este sistema foi criado para processamento de arquivos de planilha Excel contendo informações financeiras.
-            Funcionamento:
+            ### Este sistema foi criado para processamento de arquivos de planilha Excel contendo informações financeiras.
+            
+            #### Funcionamento:
             - Permite o upload de dois arquivos Excel: Extrato e Acompanhamento de Serviços
             - Extrai números de notas fiscais dos lançamentos do extrato
             - Relaciona estas notas com os registros do arquivo de serviços
             - Gera um extrato conciliado com informações completas
-            Dados processados:
+            
+            #### Dados processados:
             - Data das movimentações
             - Descrição dos lançamentos
             - Valores monetários
             - Documentos fiscais relacionados
-            Verificações de segurança:
+            
+            #### Verificações de segurança:
             - Confirma existência de movimentações
             - Identifica arquivos vazios
             - Registra problemas para investigação posterior
-            Tipos de movimentações tratadas:
+            
+            #### Tipos de movimentações tratadas:
             - SISPAG
             - TED
             - PIX
-            Resultado final:
+            
+            #### Resultado final:
             - Apresenta relatório na tela
             - Oferece download do arquivo processado em Excel
             - Disponibiliza relatório de erros quando necessário
